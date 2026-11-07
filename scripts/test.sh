@@ -3,7 +3,7 @@
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
-langs=(zh en ja)
+langs=(zh en ja ru)
 errors=0
 
 for src in "${langs[@]}"; do

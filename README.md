@@ -45,6 +45,7 @@ This playbook is available in:
 - [English](en/)
 - [中文](zh/)
 - [日本語](ja/)
+- [Русский](ru/)
 
 Translations are kept in sync automatically. When a PR changes content in one language, a GitHub Actions workflow translates the changes into the other two languages within the same PR. A writing quality review runs on all three languages before merge.
 
