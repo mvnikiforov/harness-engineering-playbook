@@ -1,71 +1,71 @@
 # Harness Engineering Playbook
 
-**Reliable Software Delivery at 100x: How to Organize AI and Humans for Production-Grade Output**
+**Надёжная поставка ПО на 100x: как организовать ИИ и людей для промышленного результата**
 
-**An [AgentsZone.ai](https://agentszone.ai) Community Publication**
+**Публикация сообщества [AgentsZone.ai](https://agentszone.ai)**
 
-[![Read Online](https://img.shields.io/badge/Read_Online-GitHub_Pages-blue)](https://lipingtababa.github.io/harness-engineering-playbook/)
+[![Читать онлайн](https://img.shields.io/badge/%D0%A7%D0%B8%D1%82%D0%B0%D1%82%D1%8C_%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-GitHub_Pages-blue)](https://mvnikiforov.github.io/harness-engineering-playbook/ru/)
 
-> **Early Draft** — The structure and framework are in place. Chapter content consists of practitioner-validated first drafts that will be refined with more detail, examples, and case studies in subsequent versions.
+> **Ранний черновик** — Структура и каркас готовы. Содержание глав состоит из проверенных практиками первых черновиков, которые будут дополняться деталями, примерами и разборами кейсов в следующих версиях.
 
-## Why This Book
+## Зачем нужна эта книга
 
-AI coding tools have raised the ceiling of what a single developer can produce. Yet most teams report the same paradox: PRs go up, review times get longer, bug rates climb. Individual speed improves while overall delivery stalls.
+Инструменты ИИ-кодинга подняли потолок того, что может создать один разработчик. Однако большинство команд сталкиваются с одним и тем же парадоксом: количество PR растёт, время ревью увеличивается, число багов ползёт вверх. Индивидуальная скорость растёт, а общая поставка буксует.
 
-Meanwhile, a small number of practitioners routinely orchestrate multiple AI agents in parallel and ship production-grade code at 10-100x their previous pace. Same models, same tools — different results.
+В то же время небольшая группа практиков регулярно оркестрирует несколько ИИ-агентов параллельно и поставляет промышленный код в 10–100 раз быстрее прежнего темпа. Те же модели, те же инструменты — разные результаты.
 
-The difference is **engineering discipline designed for AI agents as practitioners**, not prompt tricks or tool selection. This playbook distills the methodology.
+Разница — в **инженерной дисциплине, спроектированной для ИИ-агентов как исполнителей**, а не в приёмах промптинга или выборе инструментов. Этот плейбук систематизирует такую методологию.
 
-## Who This Is For
+## Для кого эта книга
 
-**Decision makers** — CTOs, VPs of Engineering, and technical leaders driving AI adoption. Parts I-II give you the engineering foundation your teams need before scaling. Part III directly addresses organizational redesign: why traditional team structures break down with AI agents, how roles shift from execution to governance, and what the new organizational moat looks like.
+**Принимающим решения** — CTO, VP of Engineering и техническим лидерам, внедряющим ИИ. Части I–II дают инженерный фундамент, необходимый командам перед масштабированием. Часть III напрямую посвящена редизайну организации: почему традиционные структуры команд ломаются при работе с ИИ-агентами, как роли смещаются от исполнения к управлению (governance) и как выглядит новое организационное конкурентное преимущество.
 
-**Software developers** — Whether you are transitioning from writing code yourself to directing agents, or you have already started and hit the wall of diminishing returns. The playbook maps the full progression: from making a single agent reliable, to running parallel agent fleets, to redefining your role on the team.
+**Разработчикам ПО** — переходите ли вы от самостоятельного написания кода к управлению агентами или уже начали этот путь и упёрлись в потолок убывающей отдачи. Плейбук описывает всю прогрессию: от обеспечения надёжности одного агента до запуска параллельных флотов агентов и переосмысления своей роли в команде.
 
-## What You Will Learn
+## Что вы узнаете
 
-### Part I: Reliable Agent Programming (1 to 10x)
-Move from vibe coding to closed-loop engineering. Learn to write machine-readable specifications that eliminate ambiguity, and build automated verification systems that catch defects before they compound.
+### Часть I: Надёжное программирование с агентами (от 1 к 10x)
+Переход от vibe coding к инженерии с замкнутым контуром. Научитесь писать машиночитаемые спецификации, устраняющие неоднозначность, и строить системы автоматической верификации, перехватывающие дефекты до их накопления.
 
-### Part II: Scaling Agent Development (10 to 100x)
-Let agents run autonomously across sessions and days. Solve context collapse, cross-session memory, multi-agent isolation, and integration — so you shift from real-time conversation partner to task designer.
+### Часть II: Масштабирование агентной разработки (от 10 к 100x)
+Позвольте агентам работать автономно на протяжении сессий и дней. Решите проблемы коллапса контекста, межсессионной памяти, изоляции нескольких агентов и интеграции — чтобы перейти от роли собеседника в реальном времени к роли проектировщика задач.
 
-### Part III: Governing the 100x Organization
-When multiple humans command their own agent fleets, the bottleneck moves from code to organization. Redesign roles, governance models, and team boundaries for hybrid human-agent teams.
+### Часть III: Управление организацией на 100x
+Когда несколько человек управляют собственными флотами агентов, узкое место смещается с кода на организацию. Перепроектируйте роли, модели управления и границы команд для гибридных человеко-агентных команд.
 
-## Two Core Principles
+## Два ключевых принципа
 
-1. **Closed-loop control** — Explicit specs define input. Automated verification checks output. Deviations are detected and corrected in real time. Agents do not self-check; the feedback loop must be engineered into the system.
+1. **Управление с замкнутым контуром (Closed-loop control)** — Явные спецификации определяют вход. Автоматическая верификация проверяет выход. Отклонения обнаруживаются и исправляются в реальном времени. Агенты не проверяют себя сами; контур обратной связи должен быть спроектирован внутри системы.
 
-2. **Evolution** — Agents replicate patterns in the codebase, including bad ones. Specs, tests, processes — every layer needs continuous improvement, or the system self-reinforces toward degradation.
+2. **Эволюция (Evolution)** — Агенты воспроизводят паттерны, уже существующие в кодовой базе, включая плохие. Спецификации, тесты, процессы — каждый уровень требует непрерывного улучшения, иначе система сама усиливает собственную деградацию.
 
-## Languages
+## Языки
 
-This playbook is available in:
+Этот плейбук доступен на следующих языках:
+- [Русский](ru/)
 - [English](en/)
 - [中文](zh/)
 - [日本語](ja/)
-- [Русский](ru/)
 
-Translations are kept in sync automatically. When a PR changes content in one language, a GitHub Actions workflow translates the changes into the other two languages within the same PR. A writing quality review runs on all three languages before merge.
+Переводы синхронизируются автоматически. Когда PR меняет содержимое на одном языке, workflow в GitHub Actions переводит изменения на остальные языки в рамках того же PR. Перед слиянием запускается проверка качества текста для всех языков.
 
-## Getting Started
+## Быстрый старт
 
-The playbook is built with [HonKit](https://github.com/honkit/honkit) and published via GitBook.
+Плейбук собран с помощью [HonKit](https://github.com/honkit/honkit) и публикуется через GitBook / GitHub Pages.
 
-To run locally:
+Для локального запуска:
 
 ```bash
 npm install
 npm run serve
 ```
 
-Then open [http://localhost:4000](http://localhost:4000) in your browser.
+Затем откройте [http://localhost:4000](http://localhost:4000) (или [http://localhost:4000/ru/](http://localhost:4000/ru/) для русской версии) в браузере.
 
-## About
+## О проекте
 
-A collective work by the **[AgentsZone.ai](https://agentszone.ai)** community — a practitioner community focused on AI-native software engineering. Built from real-world experience across teams that have made the transition from vibe coding to production-grade agent-driven delivery.
+Коллективная работа сообщества **[AgentsZone.ai](https://agentszone.ai)** — сообщества практиков, сфокусированного на AI-native программной инженерии. Основано на реальном опыте команд, прошедших переход от vibe coding к промышленной поставке под управлением агентов.
 
-## License
+## Лицензия
 
-All rights reserved by the AgentsZone.ai community.
+Все права защищены сообществом AgentsZone.ai.
