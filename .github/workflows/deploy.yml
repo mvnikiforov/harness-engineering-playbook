@@ -3,6 +3,7 @@ name: Deploy GitBook
 on:
   push:
     branches: [gitbook]
+  workflow_dispatch:
 
 permissions:
   contents: read
